@@ -3,7 +3,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeroSection = styled.section`
-  background :# yellow no-repeat center center;
+  background-image: url('logo192.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   height: 600px;
   display: flex;
   justify-content: center;
