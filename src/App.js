@@ -1,23 +1,25 @@
+// src/App.js
 import React from 'react';
-import Header from './components/header.jsx';
-import About from './components/About.jsx';
-import Skills from './components/Skills.jsx';
-import Projects from './components/Projects.jsx';
-import Contact from './components/Contact.jsx';
-import './App.css';
+import GlobalStyles from './styles/GlobalStyles.js';
+import Navbar from './components/Navbar.js';
+import Hero from './components/Hero.js';
+import About from './components/About.js';
+import Services from './components/Services.js';
+import Contact from './components/Contact.js';
+import Footer from './components/Footer.js';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <main className="container">
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-    </div>
+    <>
+      <GlobalStyles />
+      <Navbar />
+      <Hero />
+      <About />
+      <Services />
+      <Contact />
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
